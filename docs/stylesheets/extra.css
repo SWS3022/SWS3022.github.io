@@ -107,6 +107,88 @@
   flex: 0 0 auto;
 }
 
+.md-typeset .schedule-table-wrapper {
+  margin: 1rem 0 1.6rem;
+  overflow-x: auto;
+}
+
+.md-typeset .schedule-calendar {
+  border-collapse: collapse;
+  min-width: 980px;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.md-typeset .schedule-calendar th,
+.md-typeset .schedule-calendar td {
+  border: 1px solid #1f1f1f;
+  padding: 0.45rem 0.5rem;
+  vertical-align: top;
+}
+
+.md-typeset .schedule-calendar th {
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.md-typeset .schedule-calendar td {
+  color: #111;
+  font-size: 0.68rem;
+  line-height: 1.25;
+  min-height: 6.8rem;
+}
+
+.md-typeset .schedule-calendar p {
+  margin: 0.35rem 0;
+}
+
+.md-typeset .schedule-header-blue {
+  background: #233d68;
+}
+
+.md-typeset .schedule-header-orange {
+  background: #c95d0b;
+}
+
+.md-typeset .schedule-date {
+  color: #2a3e90;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.md-typeset .schedule-topic {
+  color: #d60000;
+  font-weight: 700;
+}
+
+.md-typeset .schedule-calendar mark {
+  background: #fff36a;
+  color: #111;
+  padding: 0 0.1rem;
+}
+
+.md-typeset .cell-blue {
+  background: #b7d1ea;
+}
+
+.md-typeset .cell-cream {
+  background: #fff2c6;
+}
+
+.md-typeset .cell-yellow {
+  background: #ffe59a;
+}
+
+.md-typeset .cell-green {
+  background: #c6e0b4;
+}
+
+.md-typeset .cell-peach {
+  background: #f6dfcf;
+}
+
 @media (max-width: 860px) {
   .md-typeset .home-card-grid {
     grid-template-columns: 1fr;
