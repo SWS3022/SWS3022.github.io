@@ -2,6 +2,8 @@
 
 This repository contains one tutorial site for **SWS3022 AI/ML for Financial Services**. The current tutorial is named **FinSight Risk Dashboard** and belongs under the course outcome: "Use reactJS, python-flask, basic DB operations (CURD) to build fintech web applications."
 
+The site navigation shortens this outcome to **Fintech Web App: React + Flask + DB**.
+
 ## Local Preview
 
 Install dependencies:

@@ -21,7 +21,7 @@ theme:
 
 nav:
   - About the Course: index.md
-  - "Use reactJS, python-flask, basic DB operations (CURD) to build fintech web applications":
+  - "Fintech Web App: React + Flask + DB":
       - Tutorial Overview: web-app/index.md
       - What You Will Build: overview/what-you-will-build.md
       - System Architecture: overview/system-architecture.md

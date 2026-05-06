@@ -51,6 +51,44 @@ sequenceDiagram
 
 This separation matters. The frontend should not know database details. The backend should protect data rules and provide a stable API.
 
+## Example API Contract
+
+The frontend will call this endpoint to load review records:
+
+```text
+GET /api/reviews
+```
+
+The backend will return JSON:
+
+```json
+[
+  {
+    "id": 1,
+    "applicant_name": "Avery Tan",
+    "product_type": "Personal Loan",
+    "risk_band": "Medium",
+    "model_score": 0.67,
+    "review_date": "2026-09-18",
+    "analyst_note": "Stable income, moderate utilization."
+  }
+]
+```
+
+The important idea is not the exact field names. The important idea is that React and Flask must agree on the shape of the data.
+
+## Manual Trace Exercise
+
+Trace this request by filling in the missing parts:
+
+| Step | Question | Your answer |
+| --- | --- | --- |
+| 1 | Which user action starts the request? | |
+| 2 | Which API route does React call? | |
+| 3 | Which table does Flask query? | |
+| 4 | What format does Flask return? | |
+| 5 | Which part updates the screen? | |
+
 ## Common Confusions
 
 !!! note "Frontend versus backend"
@@ -66,6 +104,12 @@ Trace this action:
 > An analyst types a new risk review record into the form and clicks Save.
 
 You should be able to name the path from React to Flask to SQLite, and then back to React.
+
+Checkpoint answer format:
+
+```text
+React form -> POST /api/reviews -> Flask route -> SQLite insert -> JSON response -> React state update
+```
 
 ## Review Questions
 

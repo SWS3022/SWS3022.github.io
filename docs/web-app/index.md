@@ -9,7 +9,7 @@ The system uses four core technologies:
 - **React** for the user interface.
 - **Node.js and npm** for frontend development and builds.
 
-The goal is not only to copy commands. The goal is to understand how the parts of a web system cooperate.
+The goal is not only to copy commands. The goal is to understand how the parts of a web system cooperate, and to practice a small but realistic fintech development workflow.
 
 ## Learning Goals
 
@@ -23,7 +23,13 @@ By the end of this tutorial, you should be able to:
 - Understand what GitHub Pages can and cannot host.
 - Connect software architecture ideas to a financial-services workflow.
 
-## Course Map
+## How to Use This Tutorial
+
+Work through the pages in order. Each page has a short concept section, one or two examples, and a checkpoint that should be completed before moving on.
+
+Do not skip the manual checks. They are intentionally small, but they build the habit of verifying a system instead of trusting that it works.
+
+## Tutorial Map
 
 ```mermaid
 flowchart LR
@@ -33,6 +39,21 @@ flowchart LR
     D --> E[Build a React dashboard]
     E --> F[Review the full system]
     F --> G[Deploy static documentation]
+```
+
+## Working Example
+
+Throughout the tutorial, use this sample risk review record when you need test data:
+
+```json
+{
+  "applicant_name": "Avery Tan",
+  "product_type": "Personal Loan",
+  "risk_band": "Medium",
+  "model_score": 0.67,
+  "review_date": "2026-09-18",
+  "analyst_note": "Stable income, moderate utilization."
+}
 ```
 
 ## Important Hosting Note
@@ -46,6 +67,17 @@ For the course project, students will first run the complete system locally. Lat
 Before starting the technical lessons, make sure you can describe this sentence in your own words:
 
 > A React frontend sends HTTP requests to a Flask backend, and the Flask backend uses SQLite to store and retrieve data.
+
+## Mini Exercise
+
+Write down the role of each part in one line:
+
+| Part | Your one-line explanation |
+| --- | --- |
+| React | |
+| Flask | |
+| SQLite | |
+| Node.js/npm | |
 
 ## Review Questions
 

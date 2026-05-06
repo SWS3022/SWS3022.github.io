@@ -27,13 +27,26 @@ git --version
 
 You should see version numbers rather than command-not-found errors.
 
+## Example Output
+
+Your exact versions may differ, but the output should look similar:
+
+```text
+Python 3.11.8
+v20.14.0
+10.7.0
+git version 2.43.0
+```
+
+If one command fails, fix that tool before continuing. A broken setup causes confusing errors later.
+
 ## Recommended Folder Layout
 
 Create one folder for the course:
 
 ```text
 sws3022-workspace/
-  campus-event-board/
+  finsight-risk-dashboard/
 ```
 
 Avoid spaces and non-English characters in the folder path. This reduces setup problems across Windows, macOS, and Linux.
@@ -48,6 +61,29 @@ When something fails, read the error from top to bottom and identify:
 
 Debugging is not a side activity. It is part of building software.
 
+## Manual Setup Check
+
+Create the project folder and move into it:
+
+```bash
+mkdir sws3022-workspace
+cd sws3022-workspace
+mkdir finsight-risk-dashboard
+cd finsight-risk-dashboard
+```
+
+Then confirm your current location:
+
+```bash
+pwd
+```
+
+On Windows PowerShell, you can also use:
+
+```powershell
+Get-Location
+```
+
 ## Checkpoint
 
 You are ready for the next lesson when all four version commands work:
@@ -58,6 +94,8 @@ node --version
 npm --version
 git --version
 ```
+
+Also confirm that your course folder is named `finsight-risk-dashboard`.
 
 ## Review Questions
 

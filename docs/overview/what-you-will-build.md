@@ -15,6 +15,14 @@ FinSight Risk Dashboard lets a user:
 
 The first version will not include accounts, passwords, payments, real customer data, or production model serving. Those features are important, but they would hide the core system ideas we want to learn first.
 
+## User Story
+
+Use this user story to keep the system focused:
+
+> As an analyst, I want to record a simple risk review so that I can compare applicants by product type, model score, and risk band.
+
+This story is small enough to implement, but it still requires a real frontend, backend, and database.
+
 ## Data Model
 
 Each review record has:
@@ -28,6 +36,18 @@ Each review record has:
 | `model_score` | `0.67` | Simplified score from a model or rule |
 | `review_date` | `2026-09-18` | Date of the review |
 | `analyst_note` | `Stable income, moderate utilization.` | Short analyst context |
+
+## Example Records
+
+Use these examples when testing the interface and API:
+
+| Applicant | Product | Score | Risk band |
+| --- | --- | --- | --- |
+| Avery Tan | Personal Loan | `0.67` | Medium |
+| Mira Lee | Credit Card | `0.31` | Low |
+| Daniel Wong | SME Loan | `0.84` | High |
+
+The examples are fictional. Do not use real personal or financial data in this tutorial.
 
 ## User Flow
 
@@ -56,6 +76,16 @@ This project is small enough to finish, but complete enough to teach real system
 - Node.js teaches the modern frontend toolchain.
 - GitHub teaches version control, collaboration, and deployment workflow.
 
+## Manual Design Task
+
+Before writing code, sketch the first screen on paper or in a note:
+
+1. A table or card list of review records.
+2. A form for creating a new review record.
+3. A filter for `risk_band`.
+
+Keep the sketch simple. The purpose is to decide what data the user needs to see, not to design a polished product.
+
 ## Checkpoint
 
 You are ready to continue when you can answer:
@@ -63,6 +93,7 @@ You are ready to continue when you can answer:
 - What information should a risk review record store?
 - Which part of the system displays review records?
 - Which part of the system saves review records?
+- Which field would you filter first if you were an analyst?
 
 ## Review Questions
 
