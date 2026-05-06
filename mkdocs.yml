@@ -11,8 +11,8 @@ theme:
   favicon: assets/images/nusLogo.png
   palette:
     - scheme: default
-      primary: teal
-      accent: deep orange
+      primary: custom
+      accent: custom
   features:
     - navigation.sections
     - navigation.top
@@ -21,6 +21,7 @@ theme:
 
 nav:
   - About the Course: index.md
+  - Teaching Team: teaching-team.md
   - "Fintech Web App: React + Flask + DB":
       - Tutorial Overview: web-app/index.md
       - What You Will Build: overview/what-you-will-build.md
@@ -49,7 +50,7 @@ markdown_extensions:
 plugins:
   - search
 
-copyright: "©️ SWS3033 Teaching Team, NUS"
+copyright: "&copy; SWS3033 Teaching Team, NUS"
 
 extra:
   generator: false

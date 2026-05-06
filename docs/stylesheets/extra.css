@@ -11,3 +11,43 @@
   height: 1.45rem;
   width: auto;
 }
+
+:root {
+  --md-primary-fg-color: #003d7c;
+  --md-primary-fg-color--light: #245b9a;
+  --md-primary-fg-color--dark: #002b57;
+  --md-accent-fg-color: #ef7c00;
+}
+
+.md-tabs,
+.md-header {
+  background-color: #003d7c;
+}
+
+.md-typeset a {
+  color: #003d7c;
+}
+
+.md-typeset a:hover {
+  color: #ef7c00;
+}
+
+.md-typeset .team-profile {
+  display: grid;
+  grid-template-columns: minmax(160px, 220px) 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.md-typeset .team-profile img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 6px;
+}
+
+@media (max-width: 720px) {
+  .md-typeset .team-profile {
+    grid-template-columns: 1fr;
+  }
+}
