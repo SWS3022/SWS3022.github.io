@@ -1,54 +1,27 @@
-# Tutorial 1: FinSight Risk Dashboard
+# About the Course
 
-This is one tutorial in **SWS3022 AI/ML for Financial Services**. In this tutorial, you will build **FinSight Risk Dashboard**, a small full-stack web application for reviewing simple financial risk records.
+In this workshop, students will be introduced to financial services, trading and the importance of AI/ML in the fintech industry with a set of case studies.
 
-The system uses four core technologies:
+Students will learn fundamental concepts of AI/ML, including supervised/unsupervised learning, Naive Bayes Classifier, Logistic Regression, bias-variance tradeoff, principal component analysis, Support Vector Machine, Decision Tree, Random Forest, K-Means, Agglomerative Approach, ARIMA, GARCH, Evaluation Metrics and neural networks (ANN, CNN, RNN, LSTM, NLP, LLM, etc).
 
-- **Flask** for the backend API.
-- **SQLite** for persistent data.
-- **React** for the user interface.
-- **Node.js and npm** for frontend development and builds.
+You will get hands-on experience in obtaining financial data via Quandl, or Yahoo Finance and understanding financial data and structure the data in a way that is amenable to ML algorithms.
 
-The goal is not only to copy commands. The goal is to understand how the parts of a web system cooperate.
+Students will be equipped with skill to implement machine learning algorithms to extract key features from financial datasets. Students will also be trained to develop frontend dashboards with tools such as streamlit and dash; and to develop fintech web applications using modern web application frameworks such as reactJS, python-flask and basic DB.
 
-## Learning Goals
+Students will also be introduced to the financial system for the future such as Finternet through case studies, research and group discussions to think about opportunities and applications in the future.
 
-By the end of this tutorial, you should be able to:
+## Learning Outcomes
 
-- Explain what the browser, frontend, backend, and database each do.
-- Run a Flask API and a React app locally.
-- Read and write data through HTTP requests.
-- Store application data in SQLite.
-- Review a small system by tracing data from the UI to the database and back.
-- Understand what GitHub Pages can and cannot host.
-- Connect software architecture ideas to a financial-services workflow.
+By the end of the course, students will be able to:
 
-## Course Map
+- Understand and appreciate the growing importance of AI/ML in the Financial Industry.
+- Understand and appreciate financial system for the future such as Finternet and brainstorm on role of AI/ML in future systems.
+- Understand the and distinguish between supervised machine learning (ML), unsupervised ML, deep learning and artificial intelligence.
+- Understanding statistical and mathematical models and their limitations.
+- Understand Financial datasets and prepare the data for ML using Python libraries.
+- Build and apply appropriate AI/ML models and data processing techniques using Python libraries for business decisions in financial settings.
+- Use reactJS, python-flask, basic DB operations (CURD) to build fintech web applications.
 
-```mermaid
-flowchart LR
-    A[Install tools] --> B[Run the starter project]
-    B --> C[Build a Flask API]
-    C --> D[Connect SQLite]
-    D --> E[Build a React dashboard]
-    E --> F[Review the full system]
-    F --> G[Deploy static documentation]
-```
+## Prerequisites
 
-## Important Hosting Note
-
-GitHub Pages hosts static files. It is a good place for this tutorial website and for a built React frontend. It does not run a Flask server or a SQLite database process.
-
-For the course project, students will first run the complete system locally. Later deployment lessons will separate the static frontend from the backend service.
-
-## First Checkpoint
-
-Before starting the technical lessons, make sure you can describe this sentence in your own words:
-
-> A React frontend sends HTTP requests to a Flask backend, and the Flask backend uses SQLite to store and retrieve data.
-
-## Review Questions
-
-1. What part of the system does the browser run?
-2. Why do we need a backend if React can already show a page?
-3. Why is GitHub Pages a good place for course documentation?
+Python Programming Knowledge (Basic data structures and numpy).

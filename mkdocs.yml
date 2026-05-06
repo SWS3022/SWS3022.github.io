@@ -1,6 +1,8 @@
 site_name: SWS3022 AI/ML for Financial Services
 site_description: "Tutorial 1: FinSight Risk Dashboard."
 site_url: https://sws3022.github.io/
+extra_css:
+  - stylesheets/extra.css
 
 theme:
   name: material
@@ -14,17 +16,18 @@ theme:
   features:
     - navigation.sections
     - navigation.top
-    - navigation.footer
     - content.code.copy
     - search.suggest
 
 nav:
-  - Home: index.md
-  - What You Will Build: overview/what-you-will-build.md
-  - System Architecture: overview/system-architecture.md
-  - Install Tools: setup/install-tools.md
-  - Run the Starter Project: setup/run-starter.md
-  - Full System Review: review/full-system-review.md
+  - About the Course: index.md
+  - "Use reactJS, python-flask, basic DB operations (CURD) to build fintech web applications":
+      - Tutorial Overview: web-app/index.md
+      - What You Will Build: overview/what-you-will-build.md
+      - System Architecture: overview/system-architecture.md
+      - Install Tools: setup/install-tools.md
+      - Run the Starter Project: setup/run-starter.md
+      - Full System Review: review/full-system-review.md
 
 markdown_extensions:
   - admonition

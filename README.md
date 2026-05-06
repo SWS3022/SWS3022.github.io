@@ -1,6 +1,6 @@
 # SWS3022 AI/ML for Financial Services
 
-This repository contains one tutorial site for SWS3022 AI/ML for Financial Services. The tutorial is named **FinSight Risk Dashboard** and teaches students how to understand, build, run, and review a small Flask, React, and SQLite web system.
+This repository contains one tutorial site for **SWS3022 AI/ML for Financial Services**. The current tutorial is named **FinSight Risk Dashboard** and belongs under the course outcome: "Use reactJS, python-flask, basic DB operations (CURD) to build fintech web applications."
 
 ## Local Preview
 
