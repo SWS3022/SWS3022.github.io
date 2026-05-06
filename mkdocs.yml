@@ -1,0 +1,52 @@
+site_name: SWS3022 AI/ML for Financial Services
+site_description: "Tutorial 1: FinSight Risk Dashboard."
+site_url: https://sws3022.github.io/
+
+theme:
+  name: material
+  language: en
+  logo: assets/images/nusLogo.png
+  favicon: assets/images/nusLogo.png
+  palette:
+    - scheme: default
+      primary: teal
+      accent: deep orange
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - search.suggest
+
+nav:
+  - Home: index.md
+  - What You Will Build: overview/what-you-will-build.md
+  - System Architecture: overview/system-architecture.md
+  - Install Tools: setup/install-tools.md
+  - Run the Starter Project: setup/run-starter.md
+  - Full System Review: review/full-system-review.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+
+copyright: "Copyright: School of Computing, NUS"
+
+extra:
+  generator: false
