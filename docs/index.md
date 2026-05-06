@@ -1,27 +1,37 @@
-# About the Course
+# Home
 
-In this workshop, students will be introduced to financial services, trading and the importance of AI/ML in the fintech industry with a set of case studies.
+Welcome to **SWS3022 AI/ML for Financial Services**. Use this page as the entry point for course information and online tutorial resources.
 
-Students will learn fundamental concepts of AI/ML, including supervised/unsupervised learning, Naive Bayes Classifier, Logistic Regression, bias-variance tradeoff, principal component analysis, Support Vector Machine, Decision Tree, Random Forest, K-Means, Agglomerative Approach, ARIMA, GARCH, Evaluation Metrics and neural networks (ANN, CNN, RNN, LSTM, NLP, LLM, etc).
+<div class="home-card-grid" markdown>
 
-You will get hands-on experience in obtaining financial data via Quandl, or Yahoo Finance and understanding financial data and structure the data in a way that is amenable to ML algorithms.
+<section class="home-card" markdown>
 
-Students will be equipped with skill to implement machine learning algorithms to extract key features from financial datasets. Students will also be trained to develop frontend dashboards with tools such as streamlit and dash; and to develop fintech web applications using modern web application frameworks such as reactJS, python-flask and basic DB.
+## About SWS3022
 
-Students will also be introduced to the financial system for the future such as Finternet through case studies, research and group discussions to think about opportunities and applications in the future.
+<div class="home-link-list" markdown>
 
-## Learning Outcomes
+- :material-information-outline:{ .home-link-icon } [About SWS3022](about/course.md)
+- :material-account-group:{ .home-link-icon } [Teaching Team](teaching-team.md)
+- :material-calendar-month:{ .home-link-icon } [Class Schedule](about/class-schedule.md)
 
-By the end of the course, students will be able to:
+</div>
 
-- Understand and appreciate the growing importance of AI/ML in the Financial Industry.
-- Understand and appreciate financial system for the future such as Finternet and brainstorm on role of AI/ML in future systems.
-- Understand the and distinguish between supervised machine learning (ML), unsupervised ML, deep learning and artificial intelligence.
-- Understanding statistical and mathematical models and their limitations.
-- Understand Financial datasets and prepare the data for ML using Python libraries.
-- Build and apply appropriate AI/ML models and data processing techniques using Python libraries for business decisions in financial settings.
-- Use reactJS, python-flask, basic DB operations (CURD) to build fintech web applications.
+</section>
 
-## Prerequisites
+<section class="home-card" markdown>
 
-Python Programming Knowledge (Basic data structures and numpy).
+## Websites
+
+<div class="home-link-list" markdown>
+
+- :material-school:{ .home-link-icon } [Canvas](https://www.nus.edu.sg/canvas/login/)
+- :material-message-text:{ .home-link-icon } [Piazza](https://piazza.com/)
+
+</div>
+
+</section>
+
+</div>
+
+!!! note "Online tutorial"
+    The first online tutorial is **Fintech Web App: React + Flask + DB**. It focuses on system architecture, API boundaries, and a small full-stack fintech application.

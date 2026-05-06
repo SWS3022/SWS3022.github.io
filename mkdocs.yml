@@ -20,17 +20,20 @@ theme:
     - search.suggest
 
 nav:
-  - About:
-      - About the Course: index.md
-      - Teaching Team: teaching-team.md
-  - Online Tutorial:
-      - "Fintech Web App: React + Flask + DB":
-          - Tutorial Overview: web-app/index.md
-          - What You Will Build: overview/what-you-will-build.md
-          - System Architecture: overview/system-architecture.md
-          - Install Tools: setup/install-tools.md
-          - Run the Starter Project: setup/run-starter.md
-          - Full System Review: review/full-system-review.md
+  - Home: index.md
+  - "SWS3022 AI/ML for Financial Services":
+      - About:
+          - About the Course: about/course.md
+          - Teaching Team: teaching-team.md
+          - Class Schedule: about/class-schedule.md
+      - Online Tutorial:
+          - "Fintech Web App: React + Flask + DB":
+              - Tutorial Overview: web-app/index.md
+              - What You Will Build: overview/what-you-will-build.md
+              - System Architecture: overview/system-architecture.md
+              - Install Tools: setup/install-tools.md
+              - Run the Starter Project: setup/run-starter.md
+              - Full System Review: review/full-system-review.md
 
 markdown_extensions:
   - admonition
@@ -42,6 +45,9 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
