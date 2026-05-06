@@ -1,49 +1,59 @@
 # Tutorial 1: FinSight Risk Dashboard
 
-This is one tutorial in **SWS3022 AI/ML for Financial Services**. In this tutorial, you will build **FinSight Risk Dashboard**, a small full-stack web application for reviewing simple financial risk records.
+This is one tutorial in **SWS3022 AI/ML for Financial Services**. In this tutorial, you will build **FinSight Risk Dashboard**, a small full-stack web application for reviewing fictional financial risk records.
 
-The system uses four core technologies:
+The project is deliberately modest. That is the point. A small system can still teach the ideas that matter in larger fintech systems: data flow, boundaries, validation, persistence, and debugging.
 
-- **Flask** for the backend API.
-- **SQLite** for persistent data.
-- **React** for the user interface.
-- **Node.js and npm** for frontend development and builds.
+## Technologies Used
 
-The goal is not only to copy commands. The goal is to understand how the parts of a web system cooperate, and to practice a small but realistic fintech development workflow.
+- [**React**](https://react.dev/learn): a JavaScript library for building user interfaces in the browser.
+- [**Flask**](https://flask.palletsprojects.com/en/stable/): a Python framework for building backend web APIs.
+- [**SQLite**](https://www.sqlite.org/docs.html): a lightweight database that stores data in a local file.
+- [**Node.js and npm**](https://nodejs.org/learn/getting-started/introduction-to-nodejs): tools used to install and run the React development environment.
+- [**GitHub Pages**](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages): a static hosting service. It can host this tutorial and a built React frontend, but it cannot run Flask or SQLite.
 
-## Learning Goals
+In this tutorial, Node.js is not the backend. Flask is the backend.
 
-By the end of this tutorial, you should be able to:
+## What You Should Learn
 
-- Explain what the browser, frontend, backend, and database each do.
-- Run a Flask API and a React app locally.
-- Read and write data through HTTP requests.
-- Store application data in SQLite.
-- Review a small system by tracing data from the UI to the database and back.
-- Understand what GitHub Pages can and cannot host.
-- Connect software architecture ideas to a financial-services workflow.
+By the end, you should be able to:
 
-## How to Use This Tutorial
+- Explain the difference between frontend, backend, database, and development tooling.
+- Trace a user action from the browser to React, Flask, SQLite, and back.
+- Read simple API requests and responses.
+- Recognize whether a bug is likely in the frontend, backend, or database layer.
+- Explain why React should not directly connect to SQLite.
+- Build confidence working with a small fintech-style web application.
 
-Work through the pages in order. Each page has a short concept section, one or two examples, and a checkpoint that should be completed before moving on.
+## Vocabulary We Will Use
 
-Do not skip the manual checks. They are intentionally small, but they build the habit of verifying a system instead of trusting that it works.
+| Term | Meaning in this tutorial |
+| --- | --- |
+| System | A group of parts that cooperate to perform a useful task. |
+| Architecture | The structure of the system: parts, responsibilities, and communication paths. |
+| Frontend | The browser-facing part of the app, built with React. |
+| Backend | The server-side part of the app, built with Flask. |
+| Database | The storage layer, built with SQLite. |
+| API | A defined way for one part of the system to ask another part for data or work. |
+| Contract | A shared expectation, such as the fields returned by an API route. |
+| Persistence | Data remaining available after a page refresh or restart. |
+
+These words are not decoration. They are tools for thinking clearly about the system.
 
 ## Tutorial Map
 
 ```mermaid
 flowchart LR
     A[Install tools] --> B[Run the starter project]
-    B --> C[Build a Flask API]
-    C --> D[Connect SQLite]
-    D --> E[Build a React dashboard]
+    B --> C[Understand the architecture]
+    C --> D[Connect data and API]
+    D --> E[Use the dashboard]
     E --> F[Review the full system]
-    F --> G[Deploy static documentation]
 ```
 
-## Working Example
+## Running Example
 
-Throughout the tutorial, use this sample risk review record when you need test data:
+Use this fictional review record when testing:
 
 ```json
 {
@@ -56,31 +66,34 @@ Throughout the tutorial, use this sample risk review record when you need test d
 }
 ```
 
-## Important Hosting Note
-
-GitHub Pages hosts static files. It is a good place for this tutorial website and for a built React frontend. It does not run a Flask server or a SQLite database process.
-
-For the course project, students will first run the complete system locally. Later deployment lessons will separate the static frontend from the backend service.
+Do not use real personal, banking, trading, or customer data in this tutorial.
 
 ## First Checkpoint
 
-Before starting the technical lessons, make sure you can describe this sentence in your own words:
+Before continuing, write one sentence for each part:
 
-> A React frontend sends HTTP requests to a Flask backend, and the Flask backend uses SQLite to store and retrieve data.
-
-## Mini Exercise
-
-Write down the role of each part in one line:
-
-| Part | Your one-line explanation |
+| Part | Your explanation |
 | --- | --- |
 | React | |
 | Flask | |
 | SQLite | |
 | Node.js/npm | |
 
+Then draw the arrows. Your diagram should include this path:
+
+```text
+React -> Flask -> SQLite
+```
+
+It should not include this path:
+
+```text
+React -> SQLite
+```
+
 ## Review Questions
 
-1. What part of the system does the browser run?
-2. Why do we need a backend if React can already show a page?
-3. Why is GitHub Pages a good place for course documentation?
+1. Which part runs in the browser?
+2. Which part stores data after a page refresh?
+3. Which part owns the API routes?
+4. Why is this tutorial built around a small project rather than a large application?

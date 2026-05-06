@@ -2,6 +2,8 @@
 
 A system review asks whether the parts work together clearly and reliably. It is not only a final check. It is a way to understand the system.
 
+In this tutorial, review means tracing behavior across boundaries. Do not review only by looking at files. Review by following one user action through the running system.
+
 ## Review Path
 
 Use this path whenever you need to understand a feature:
@@ -29,6 +31,8 @@ Trace it as:
 4. Flask inserts a row into SQLite.
 5. Flask returns the created review record as JSON.
 6. React updates state and shows the new review record.
+
+If you can trace this path accurately, you understand the main architecture of the project.
 
 ## API Contract
 
@@ -63,6 +67,8 @@ For `POST /api/reviews`, Flask expects:
 }
 ```
 
+The frontend and backend must agree on this shape. If React sends `riskBand` but Flask expects `risk_band`, the system has a contract mismatch.
+
 ## Manual API Test
 
 Use the browser Network tab first. If you are comfortable with the terminal, test the same route with `curl`:
@@ -88,6 +94,21 @@ Expected result:
 ```
 
 The exact number of records may differ. The field names should match the contract.
+
+## Architecture Review Questions
+
+Ask these questions for every feature:
+
+| Question | Why it matters |
+| --- | --- |
+| What starts the feature? | Identifies the user action or page load. |
+| Which component sends the request? | Locates the frontend responsibility. |
+| Which Flask route receives it? | Locates the backend responsibility. |
+| Which table or query is involved? | Locates the database responsibility. |
+| What JSON comes back? | Checks the API contract. |
+| What changes on the screen? | Confirms the user-visible result. |
+
+These questions are more useful than "does the code look right?" A system can look reasonable and still fail at a boundary.
 
 ## Review Checklist
 
@@ -122,6 +143,21 @@ Check in this order:
 4. SQLite database: confirm at least one row exists.
 
 Stop when you find the first broken link in the chain.
+
+## Final Hands-On Check
+
+Before considering the tutorial complete, demonstrate this sequence:
+
+1. Start the backend from a clean terminal.
+2. Start the frontend from a second clean terminal.
+3. Open the dashboard.
+4. Create a fictional review record.
+5. Refresh the page.
+6. Confirm the record is still present.
+7. Open the Network tab and find the API request that loaded it.
+8. Explain which part of the system stored the record.
+
+This is the minimum evidence that the full stack is working.
 
 ## Final Reflection
 

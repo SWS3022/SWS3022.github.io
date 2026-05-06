@@ -1,8 +1,8 @@
 # What You Will Build
 
-In this tutorial, you will build **FinSight Risk Dashboard**, a small full-stack web application for reviewing financial risk records.
+In this tutorial, you will build **FinSight Risk Dashboard**, a small application for recording and reviewing fictional financial risk assessments.
 
-The application is intentionally small, but it contains the same kinds of parts found in larger financial technology systems: user interface, API, data validation, database storage, and deployment decisions.
+The application is not a production risk system. It is a learning system. Every field, route, and data movement should be inspectable by a student.
 
 ## Product Goal
 
@@ -11,9 +11,9 @@ FinSight Risk Dashboard lets a user:
 - View a list of credit review records.
 - Create a new review record.
 - Filter records by risk band or product type.
-- See a simple model score and analyst note.
+- Inspect a simple model score and analyst note.
 
-The first version will not include accounts, passwords, payments, real customer data, or production model serving. Those features are important, but they would hide the core system ideas we want to learn first.
+The first version will not include authentication, real customer data, payments, production model serving, or regulatory reporting. Those topics matter, but they would hide the architecture we need to learn first.
 
 ## User Story
 
@@ -21,16 +21,26 @@ Use this user story to keep the system focused:
 
 > As an analyst, I want to record a simple risk review so that I can compare applicants by product type, model score, and risk band.
 
-This story is small enough to implement, but it still requires a real frontend, backend, and database.
+This is enough to require a real frontend, backend, and database.
+
+## First Screen
+
+The first screen should answer three questions:
+
+1. What review records already exist?
+2. Can I add a new review record?
+3. Can I focus on records with a particular risk band?
+
+Avoid adding charts or extra dashboards before this basic flow works. In software projects, adding features before the core path is stable usually makes debugging harder.
 
 ## Data Model
 
-Each review record has:
+A data model describes the fields the system stores. Each review record has:
 
 | Field | Example | Purpose |
 | --- | --- | --- |
 | `id` | `1` | Unique database identifier |
-| `applicant_name` | `Avery Tan` | Name used in the training example |
+| `applicant_name` | `Avery Tan` | Fictional applicant name |
 | `product_type` | `Personal Loan` | Financial product being reviewed |
 | `risk_band` | `Medium` | Human-readable risk category |
 | `model_score` | `0.67` | Simplified score from a model or rule |
@@ -39,7 +49,7 @@ Each review record has:
 
 ## Example Records
 
-Use these examples when testing the interface and API:
+Use these fictional records when testing:
 
 | Applicant | Product | Score | Risk band |
 | --- | --- | --- | --- |
@@ -47,7 +57,24 @@ Use these examples when testing the interface and API:
 | Mira Lee | Credit Card | `0.31` | Low |
 | Daniel Wong | SME Loan | `0.84` | High |
 
-The examples are fictional. Do not use real personal or financial data in this tutorial.
+The exact values are not important. What matters is that each layer of the system agrees on the same fields.
+
+## Data Ownership
+
+One architecture rule:
+
+> SQLite owns the stored records. React only displays a copy of records it received from Flask.
+
+This distinction is important. If a value appears on the screen, that does not automatically mean it has been saved. It is saved only after Flask writes it to SQLite.
+
+Use this mental model:
+
+```text
+React state = what the screen currently knows
+SQLite row = what the system has stored
+```
+
+A correct application keeps these two views consistent.
 
 ## User Flow
 
@@ -58,45 +85,49 @@ sequenceDiagram
     participant Flask
     participant SQLite
 
-    Analyst->>React: Open the risk dashboard
+    Analyst->>React: Open the dashboard
     React->>Flask: GET /api/reviews
     Flask->>SQLite: SELECT review records
     SQLite-->>Flask: Review rows
     Flask-->>React: JSON review list
-    React-->>Analyst: Render dashboard rows
+    React-->>Analyst: Render the table
 ```
 
-## Why This Project Works for Learning
+## Small Implementation Plan
 
-This project is small enough to finish, but complete enough to teach real system thinking in a financial-services context.
+Build in this order:
 
-- Flask teaches request handling and API design.
-- SQLite teaches persistent storage without requiring a separate database server.
-- React teaches component-based interfaces and state.
-- Node.js teaches the modern frontend toolchain.
-- GitHub teaches version control, collaboration, and deployment workflow.
+1. Backend route that returns sample review records.
+2. React screen that displays those records.
+3. SQLite table that stores records.
+4. Backend route that inserts a new record.
+5. React form that sends the new record.
+6. Filter control for `risk_band`.
+
+This order lets you test one boundary at a time.
 
 ## Manual Design Task
 
 Before writing code, sketch the first screen on paper or in a note:
 
 1. A table or card list of review records.
-2. A form for creating a new review record.
+2. A form for creating a review record.
 3. A filter for `risk_band`.
 
-Keep the sketch simple. The purpose is to decide what data the user needs to see, not to design a polished product.
+Keep the sketch simple. The purpose is to decide what data the user needs to see.
 
 ## Checkpoint
 
 You are ready to continue when you can answer:
 
 - What information should a risk review record store?
-- Which part of the system displays review records?
-- Which part of the system saves review records?
+- Which part displays review records?
+- Which part saves review records?
 - Which field would you filter first if you were an analyst?
 
 ## Review Questions
 
 1. What features are included in the first version?
 2. What features are intentionally excluded?
-3. Why is a small but complete project better than a large unfinished project?
+3. Why should the first version avoid real customer data?
+4. What is the difference between React state and a SQLite row?
