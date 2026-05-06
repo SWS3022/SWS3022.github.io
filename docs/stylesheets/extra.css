@@ -32,6 +32,10 @@
   color: #ef7c00;
 }
 
+.md-nav--primary > .md-nav__title {
+  display: none;
+}
+
 .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
   color: var(--md-default-fg-color--light);
   font-weight: 700;
