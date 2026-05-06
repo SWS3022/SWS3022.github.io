@@ -32,6 +32,11 @@
   color: #ef7c00;
 }
 
+.md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
+  color: var(--md-default-fg-color--light);
+  font-weight: 700;
+}
+
 .md-typeset .team-profile {
   display: grid;
   grid-template-columns: minmax(160px, 220px) 1fr;

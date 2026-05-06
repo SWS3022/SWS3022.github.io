@@ -20,11 +20,12 @@ theme:
     - search.suggest
 
 nav:
-  - Home: index.md
-  - About:
-      - General Information: about/course.md
-      - Teaching Team: teaching-team.md
-      - Schedule: about/class-schedule.md
+  - "SWS3022 AI/ML for Financial Services":
+      - Home: index.md
+      - About:
+          - General Information: about/course.md
+          - Teaching Team: teaching-team.md
+          - Schedule: about/class-schedule.md
   - Online Tutorial:
       - "Fintech Web App: React + Flask + DB":
           - Tutorial Overview: web-app/index.md
