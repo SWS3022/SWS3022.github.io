@@ -25,13 +25,10 @@ Welcome to **SWS3022 AI/ML for Financial Services**. Use this page as the entry 
 <div class="home-link-list" markdown>
 
 - :material-school:{ .home-link-icon } [Canvas](https://www.nus.edu.sg/canvas/login/)
-- :material-message-text:{ .home-link-icon } [Piazza](https://piazza.com/)
+- :material-message-text:{ .home-link-icon } [Piazza](https://piazza.com/nus.edu.sg/summer2026/sws3022)
 
 </div>
 
 </section>
 
 </div>
-
-!!! note "Online tutorial"
-    The first online tutorial is **Fintech Web App: React + Flask + DB**. It focuses on system architecture, API boundaries, and a small full-stack fintech application.
