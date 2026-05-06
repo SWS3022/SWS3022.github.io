@@ -20,15 +20,17 @@ theme:
     - search.suggest
 
 nav:
-  - About the Course: index.md
-  - Teaching Team: teaching-team.md
-  - "Fintech Web App: React + Flask + DB":
-      - Tutorial Overview: web-app/index.md
-      - What You Will Build: overview/what-you-will-build.md
-      - System Architecture: overview/system-architecture.md
-      - Install Tools: setup/install-tools.md
-      - Run the Starter Project: setup/run-starter.md
-      - Full System Review: review/full-system-review.md
+  - About:
+      - About the Course: index.md
+      - Teaching Team: teaching-team.md
+  - Online Tutorial:
+      - "Fintech Web App: React + Flask + DB":
+          - Tutorial Overview: web-app/index.md
+          - What You Will Build: overview/what-you-will-build.md
+          - System Architecture: overview/system-architecture.md
+          - Install Tools: setup/install-tools.md
+          - Run the Starter Project: setup/run-starter.md
+          - Full System Review: review/full-system-review.md
 
 markdown_extensions:
   - admonition
