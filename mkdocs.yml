@@ -58,7 +58,7 @@ markdown_extensions:
 plugins:
   - search
 
-copyright: "&copy; SWS3033 Teaching Team, NUS"
+copyright: "&copy; SWS3022 Teaching Team, National University of Singapore"
 
 extra:
   generator: false
