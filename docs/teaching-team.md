@@ -23,3 +23,25 @@ Dr. Anand Bhojan has served as Organizing Chair and Program Chair of several int
 </div>
 
 </div>
+
+## Tutor
+
+<div class="team-profile" markdown>
+
+![Guoyi Chen](assets/images/chenguoyi.jpg)
+
+<div markdown>
+
+### Guoyi CHEN
+
+**Full-Stack Software Engineer and AI/ML Researcher**
+
+Guoyi Chen received his B.Eng. with Honours in Computer Engineering from the National University of Singapore in 2026, with a Second Major in Data Science and Analytics and a Specialization in Robotics, focusing on the Intelligent Robotics track.
+
+He was a recipient of a full scholarship at NUS and is currently a Full-Stack Software Engineer and AI/ML researcher. His research interests focus on continual learning, continual machine learning, model adaptation, and reliable AI systems.
+
+During his undergraduate studies, Guoyi served as a Teaching Assistant and Tutor for several NUS courses, including CG2111A Engineering Principles and Practice II, CG2271 Real-Time Operating Systems, and SWS3009 Deep Learning & Robotics. He also served as Co-Captain of the NUS Cross Country Team.
+
+</div>
+
+</div>
