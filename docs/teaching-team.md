@@ -28,6 +28,26 @@ Dr. Anand Bhojan has served as Organizing Chair and Program Chair of several int
 
 <div class="team-profile" markdown>
 
+![Jingyi Zhan](assets/images/zhanjingyi.jpeg)
+
+<div markdown>
+
+### Jingyi ZHAN
+
+**PhD Student and Digital Finance Researcher**
+
+Jingyi Zhan is a PhD student in the Department of Information Systems and Analytics at School of Computing, National University of Singapore (NUS). She received her Bachelor's degree in Accounting from Jinan University and her Master's degree in Statistics from National University of Singapore.
+
+Prior to her doctoral studies, she worked as a research associate at the Asian Institute of Digital Finance, where she conducted research on digital finance and developed statistical and machine learning models for financial applications. Her experience spans data analytics, predictive modeling, artificial intelligence, and digital financial technologies.
+
+Her current research interests focus on artificial intelligence, platform governance, misinformation management, human-AI collaboration, and machine learning applications in financial technology. She is particularly interested in developing trustworthy and responsible AI systems that support effective decision-making and governance in digital platforms.
+
+</div>
+
+</div>
+
+<div class="team-profile" markdown>
+
 ![Guoyi Chen](assets/images/chenguoyi.jpg)
 
 <div markdown>
