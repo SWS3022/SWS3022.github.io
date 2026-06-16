@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">LSTM Gates</title>
+  <desc id="desc">LSTM gate diagram showing previous memory and current input flowing through forget, input, and output gates.</desc>
+  <style>.title{font:700 28px Arial,sans-serif;fill:#111}.label{font:16px Arial,sans-serif;fill:#111}.small{font:14px Arial,sans-serif;fill:#555}.arrow{stroke:#444;stroke-width:3;fill:none}.box{stroke:#555;stroke-width:1}</style>
+  <rect width="1200" height="720" fill="#fff"/><text x="40" y="62" class="title">LSTM: Gates Control Memory Flow</text>
+  <rect x="80" y="185" width="165" height="65" fill="#dceeff" class="box"/><text x="104" y="223" class="label">Previous memory</text>
+  <rect x="80" y="335" width="165" height="65" fill="#dceeff" class="box"/><text x="117" y="373" class="label">Current input</text>
+  <rect x="345" y="140" width="170" height="70" fill="#ffe2e2" class="box"/><text x="387" y="181" class="label">Forget gate</text>
+  <text x="342" y="239" class="small">What should we forget?</text>
+  <rect x="345" y="285" width="170" height="70" fill="#daf2de" class="box"/><text x="391" y="326" class="label">Input gate</text>
+  <text x="318" y="384" class="small">What new information should we store?</text>
+  <rect x="345" y="430" width="170" height="70" fill="#ffedcc" class="box"/><text x="389" y="471" class="label">Output gate</text>
+  <text x="322" y="529" class="small">What should influence the output?</text>
+  <rect x="650" y="260" width="190" height="90" fill="#ece4fa" class="box"/><text x="667" y="311" class="label">Updated memory cell</text>
+  <rect x="965" y="260" width="160" height="90" fill="#ffedcc" class="box"/><text x="983" y="311" class="label">Output hidden state</text>
+  <g class="arrow">
+    <path d="M245 218 L340 210"/><path d="M340 210 l-15 -8 M340 210 l-13 12"/>
+    <path d="M245 368 L340 420"/><path d="M340 420 l-16 1 M340 420 l-8 -14"/>
+    <path d="M515 175 L640 270"/><path d="M640 270 l-17 -3 M640 270 l-6 -16"/>
+    <path d="M515 320 H640"/><path d="M640 320 l-14 -10 M640 320 l-14 10"/>
+    <path d="M515 465 L640 370"/><path d="M640 370 l-17 3 M640 370 l-6 16"/>
+    <path d="M840 305 H955"/><path d="M955 305 l-14 -10 M955 305 l-14 10"/>
+  </g>
+  <text x="258" y="615" class="small">Gates help the model keep useful long-term context and ignore irrelevant noise.</text>
+</svg>

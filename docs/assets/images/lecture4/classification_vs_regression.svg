@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Classification vs Regression</title>
+  <desc id="desc">Synthetic diagram comparing classification with a decision boundary and regression with a fitted line.</desc>
+  <style>
+    .title { font: 700 28px Arial, sans-serif; fill: #111; }
+    .subtitle { font: 700 21px Arial, sans-serif; fill: #111; }
+    .label { font: 15px Arial, sans-serif; fill: #555; }
+    .small { font: 13px Arial, sans-serif; fill: #555; }
+    .axis { stroke: #444; stroke-width: 2; }
+    .grid { stroke: #e5e7eb; stroke-width: 1; }
+    .blue { fill: #4f87b8; }
+    .orange { fill: #df8339; }
+    .green { fill: #4f9d63; }
+  </style>
+
+  <rect width="1200" height="720" fill="#fff"/>
+  <text x="40" y="62" class="title">Classification vs Regression: Two Supervised Learning Tasks</text>
+
+  <text x="80" y="120" class="subtitle">Classification: category output</text>
+  <g transform="translate(85 155)">
+    <line x1="0" y1="84" x2="450" y2="84" class="grid"/>
+    <line x1="0" y1="168" x2="450" y2="168" class="grid"/>
+    <line x1="0" y1="252" x2="450" y2="252" class="grid"/>
+    <line x1="0" y1="336" x2="450" y2="336" class="grid"/>
+    <line x1="90" y1="0" x2="90" y2="420" class="grid"/>
+    <line x1="180" y1="0" x2="180" y2="420" class="grid"/>
+    <line x1="270" y1="0" x2="270" y2="420" class="grid"/>
+    <line x1="360" y1="0" x2="360" y2="420" class="grid"/>
+    <line x1="0" y1="420" x2="450" y2="420" class="axis"/>
+    <line x1="0" y1="0" x2="0" y2="420" class="axis"/>
+    <text x="180" y="460" class="label">Feature 1</text>
+    <text x="0" y="-16" class="label">Feature 2</text>
+
+    <line x1="92" y1="365" x2="395" y2="78" stroke="#374151" stroke-width="3"/>
+    <text x="305" y="98" class="small">decision boundary</text>
+
+    <circle cx="58" cy="335" r="7" class="blue"/><circle cx="93" cy="318" r="7" class="blue"/>
+    <circle cx="126" cy="340" r="7" class="blue"/><circle cx="82" cy="280" r="7" class="blue"/>
+    <circle cx="128" cy="273" r="7" class="blue"/><circle cx="166" cy="300" r="7" class="blue"/>
+    <circle cx="62" cy="225" r="7" class="blue"/><circle cx="112" cy="220" r="7" class="blue"/>
+    <circle cx="150" cy="245" r="7" class="blue"/><circle cx="185" cy="258" r="7" class="blue"/>
+    <circle cx="92" cy="170" r="7" class="blue"/><circle cx="142" cy="185" r="7" class="blue"/>
+    <circle cx="182" cy="205" r="7" class="blue"/><circle cx="222" cy="230" r="7" class="blue"/>
+
+    <circle cx="275" cy="220" r="7" class="orange"/><circle cx="318" cy="205" r="7" class="orange"/>
+    <circle cx="356" cy="185" r="7" class="orange"/><circle cx="392" cy="160" r="7" class="orange"/>
+    <circle cx="250" cy="160" r="7" class="orange"/><circle cx="295" cy="140" r="7" class="orange"/>
+    <circle cx="338" cy="122" r="7" class="orange"/><circle cx="380" cy="105" r="7" class="orange"/>
+    <circle cx="282" cy="88" r="7" class="orange"/><circle cx="328" cy="72" r="7" class="orange"/>
+    <circle cx="375" cy="60" r="7" class="orange"/><circle cx="418" cy="82" r="7" class="orange"/>
+  </g>
+  <circle cx="125" cy="615" r="7" class="blue"/>
+  <text x="140" y="620" class="small">No default class</text>
+  <circle cx="300" cy="615" r="7" class="orange"/>
+  <text x="315" y="620" class="small">Default class</text>
+
+  <text x="660" y="120" class="subtitle">Regression: numeric output</text>
+  <g transform="translate(660 155)">
+    <line x1="0" y1="84" x2="450" y2="84" class="grid"/>
+    <line x1="0" y1="168" x2="450" y2="168" class="grid"/>
+    <line x1="0" y1="252" x2="450" y2="252" class="grid"/>
+    <line x1="0" y1="336" x2="450" y2="336" class="grid"/>
+    <line x1="90" y1="0" x2="90" y2="420" class="grid"/>
+    <line x1="180" y1="0" x2="180" y2="420" class="grid"/>
+    <line x1="270" y1="0" x2="270" y2="420" class="grid"/>
+    <line x1="360" y1="0" x2="360" y2="420" class="grid"/>
+    <line x1="0" y1="420" x2="450" y2="420" class="axis"/>
+    <line x1="0" y1="0" x2="0" y2="420" class="axis"/>
+    <text x="192" y="460" class="label">Feature</text>
+    <text x="0" y="-16" class="label">Target value</text>
+
+    <line x1="42" y1="340" x2="410" y2="96" stroke="#4f9d63" stroke-width="4"/>
+    <text x="260" y="112" class="small">fitted prediction line</text>
+
+    <circle cx="50" cy="328" r="6" class="green"/><circle cx="78" cy="342" r="6" class="green"/>
+    <circle cx="105" cy="297" r="6" class="green"/><circle cx="135" cy="305" r="6" class="green"/>
+    <circle cx="164" cy="268" r="6" class="green"/><circle cx="192" cy="286" r="6" class="green"/>
+    <circle cx="220" cy="238" r="6" class="green"/><circle cx="247" cy="244" r="6" class="green"/>
+    <circle cx="276" cy="205" r="6" class="green"/><circle cx="304" cy="220" r="6" class="green"/>
+    <circle cx="332" cy="178" r="6" class="green"/><circle cx="360" cy="186" r="6" class="green"/>
+    <circle cx="388" cy="135" r="6" class="green"/><circle cx="414" cy="150" r="6" class="green"/>
+  </g>
+  <text x="746" y="620" class="small">Regression predicts a continuous number rather than a category.</text>
+</svg>

@@ -28,6 +28,7 @@ nav:
           - Schedule: about/class-schedule.md
   - Online Tutorial:
       - "Lecture 1 Supplement: From Python Tools to FinTech Projects": web-app/lecture-1-supplement.md
+      - "Lecture 4: AI/ML/DL Introduction": web-app/lecture-4-aiml-dl-introduction.md
       - "Fintech Web App: React + Flask + DB":
           - Tutorial Overview: web-app/index.md
           - What You Will Build: overview/what-you-will-build.md

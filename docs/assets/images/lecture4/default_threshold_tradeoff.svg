@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Credit Default Threshold Trade-Off</title>
+  <desc id="desc">Synthetic default score distributions with a decision threshold and false positive and false negative regions.</desc>
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#111}.label{font:15px Arial,sans-serif;fill:#555}.small{font:13px Arial,sans-serif;fill:#555}
+    .axis{stroke:#444;stroke-width:2}.grid{stroke:#e5e7eb;stroke-width:1}.blue{stroke:#4f87b8;stroke-width:4;fill:none}.red{stroke:#cd5c5c;stroke-width:4;fill:none}
+  </style>
+  <rect width="1200" height="720" fill="#fff"/>
+  <text x="40" y="62" class="title">Credit Default Threshold Trade-Off: Risk Scores and Business Costs</text>
+  <g transform="translate(100 135)">
+    <line x1="0" y1="94" x2="980" y2="94" class="grid"/><line x1="0" y1="188" x2="980" y2="188" class="grid"/>
+    <line x1="0" y1="282" x2="980" y2="282" class="grid"/><line x1="0" y1="376" x2="980" y2="376" class="grid"/>
+    <line x1="196" y1="0" x2="196" y2="470" class="grid"/><line x1="392" y1="0" x2="392" y2="470" class="grid"/>
+    <line x1="588" y1="0" x2="588" y2="470" class="grid"/><line x1="784" y1="0" x2="784" y2="470" class="grid"/>
+    <line x1="0" y1="470" x2="980" y2="470" class="axis"/><line x1="0" y1="0" x2="0" y2="470" class="axis"/>
+    <text x="385" y="512" class="label">Predicted default risk score</text><text x="0" y="-16" class="label">Density</text>
+    <path d="M 30 465 C 120 460, 170 350, 235 205 C 300 60, 380 65, 455 205 C 520 328, 575 430, 660 460" class="blue"/>
+    <path d="M 330 465 C 430 450, 500 330, 575 175 C 655 30, 755 55, 830 210 C 895 340, 930 430, 965 462" class="red"/>
+    <line x1="540" y1="12" x2="540" y2="470" stroke="#374151" stroke-width="3" stroke-dasharray="10 8"/>
+    <text x="485" y="-8" class="label">decision threshold</text>
+    <text x="175" y="92" class="label" fill="#4f87b8">non-default borrowers</text>
+    <text x="710" y="95" class="label" fill="#cd5c5c">default borrowers</text>
+    <text x="135" y="430" class="small">False negatives: risky borrowers approved</text>
+    <text x="620" y="430" class="small">False positives: good borrowers rejected</text>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">LSTM Sliding Windows</title>
+  <desc id="desc">Sliding windows for converting time series into LSTM training samples.</desc>
+  <style>.title{font:700 28px Arial,sans-serif;fill:#111}.label{font:16px Arial,sans-serif;fill:#111}.small{font:15px Arial,sans-serif;fill:#555}.box{stroke:#555;stroke-width:1}.arrow{stroke:#444;stroke-width:3;fill:none}</style>
+  <rect width="1200" height="720" fill="#fff"/><text x="40" y="62" class="title">LSTM Time Series Input: Sliding Windows Create Training Examples</text>
+  <text x="83" y="108" class="small">Use past time steps as input and predict the next value.</text>
+  <g>
+    <text x="47" y="197" class="small">sample 1</text><text x="47" y="289" class="small">sample 2</text><text x="47" y="381" class="small">sample 3</text><text x="47" y="473" class="small">sample 4</text>
+    <g fill="#dceeff" class="box">
+      <rect x="120" y="166" width="92" height="54"/><rect x="226" y="166" width="92" height="54"/><rect x="332" y="166" width="92" height="54"/><rect x="438" y="166" width="92" height="54"/>
+      <rect x="120" y="258" width="92" height="54"/><rect x="226" y="258" width="92" height="54"/><rect x="332" y="258" width="92" height="54"/><rect x="438" y="258" width="92" height="54"/>
+      <rect x="120" y="350" width="92" height="54"/><rect x="226" y="350" width="92" height="54"/><rect x="332" y="350" width="92" height="54"/><rect x="438" y="350" width="92" height="54"/>
+      <rect x="120" y="442" width="92" height="54"/><rect x="226" y="442" width="92" height="54"/><rect x="332" y="442" width="92" height="54"/><rect x="438" y="442" width="92" height="54"/>
+    </g>
+    <g class="label" text-anchor="middle">
+      <text x="166" y="198">t-4</text><text x="272" y="198">t-3</text><text x="378" y="198">t-2</text><text x="484" y="198">t-1</text>
+      <text x="166" y="290">t-3</text><text x="272" y="290">t-2</text><text x="378" y="290">t-1</text><text x="484" y="290">t</text>
+      <text x="166" y="382">t-2</text><text x="272" y="382">t-1</text><text x="378" y="382">t</text><text x="484" y="382">t+1</text>
+      <text x="166" y="474">t-1</text><text x="272" y="474">t</text><text x="378" y="474">t+1</text><text x="484" y="474">t+2</text>
+    </g>
+    <g class="arrow"><path d="M555 193 H650"/><path d="M650 193 l-14 -10 M650 193 l-14 10"/><path d="M555 285 H650"/><path d="M650 285 l-14 -10 M650 285 l-14 10"/><path d="M555 377 H650"/><path d="M650 377 l-14 -10 M650 377 l-14 10"/><path d="M555 469 H650"/><path d="M650 469 l-14 -10 M650 469 l-14 10"/></g>
+    <g fill="#ffedcc" class="box"><rect x="670" y="166" width="130" height="54"/><rect x="670" y="258" width="130" height="54"/><rect x="670" y="350" width="130" height="54"/><rect x="670" y="442" width="130" height="54"/></g>
+    <g class="label" text-anchor="middle"><text x="735" y="198">predict t</text><text x="735" y="290">predict t+1</text><text x="735" y="382">predict t+2</text><text x="735" y="474">predict t+3</text></g>
+  </g>
+  <text x="120" y="612" font="700 21px Arial">Input shape idea: samples x time steps x features</text>
+  <text x="120" y="642" class="small">Chronological split still matters after window creation.</text>
+</svg>

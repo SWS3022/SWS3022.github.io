@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">CNN Filter and Feature Map</title>
+  <desc id="desc">CNN pipeline from image-like grid through filter, feature map, pooling, and classifier.</desc>
+  <style>.title{font:700 28px Arial,sans-serif;fill:#111}.head{font:700 21px Arial,sans-serif;fill:#111}.label{font:15px Arial,sans-serif;fill:#555}.box{stroke:#555;stroke-width:1}.arrow{stroke:#444;stroke-width:3;fill:none}</style>
+  <rect width="1200" height="720" fill="#fff"/><text x="40" y="62" class="title">CNN: Sliding Filters Learn Local Visual Patterns</text>
+  <text x="105" y="132" class="head">Input image-like grid</text><text x="445" y="132" class="head">Filter / kernel</text><text x="700" y="132" class="head">Feature map</text><text x="955" y="132" class="head">Pooling / classifier</text>
+  <g transform="translate(110 170)">
+    <rect x="0" y="0" width="266" height="266" fill="#eee" class="box"/>
+    <g stroke="#777" stroke-width="1">
+      <path d="M38 0 V266 M76 0 V266 M114 0 V266 M152 0 V266 M190 0 V266 M228 0 V266 M0 38 H266 M0 76 H266 M0 114 H266 M0 152 H266 M0 190 H266 M0 228 H266"/>
+    </g>
+    <rect x="76" y="38" width="114" height="114" fill="#666" opacity=".75"/>
+    <rect x="152" y="76" width="114" height="38" fill="#444" opacity=".75"/>
+    <rect x="152" y="114" width="38" height="114" fill="#555" opacity=".75"/>
+    <rect x="76" y="38" width="114" height="114" fill="none" stroke="#df8339" stroke-width="4"/>
+  </g>
+  <path d="M390 305 H445" class="arrow"/><path d="M445 305 l-14 -10 M445 305 l-14 10" class="arrow"/>
+  <g transform="translate(465 205)">
+    <rect x="0" y="0" width="135" height="135" fill="#ffedcc" class="box"/>
+    <path d="M45 0 V135 M90 0 V135 M0 45 H135 M0 90 H135" stroke="#777"/>
+    <text x="20" y="29" font="17px Arial">-</text><text x="64" y="29" font="17px Arial">+</text><text x="110" y="29" font="17px Arial">-</text>
+    <text x="20" y="75" font="17px Arial">+</text><text x="64" y="75" font="17px Arial">+</text><text x="110" y="75" font="17px Arial">+</text>
+    <text x="20" y="119" font="17px Arial">-</text><text x="64" y="119" font="17px Arial">+</text><text x="110" y="119" font="17px Arial">-</text>
+  </g>
+  <path d="M620 305 H675" class="arrow"/><path d="M675 305 l-14 -10 M675 305 l-14 10" class="arrow"/>
+  <g transform="translate(705 185)">
+    <rect x="0" y="0" width="210" height="210" fill="#daf2de" class="box"/>
+    <g stroke="#777"><path d="M42 0 V210 M84 0 V210 M126 0 V210 M168 0 V210 M0 42 H210 M0 84 H210 M0 126 H210 M0 168 H210"/></g>
+    <rect x="42" y="42" width="168" height="42" fill="#ca4fd1" opacity=".9"/><rect x="126" y="84" width="42" height="126" fill="#ca4fd1" opacity=".9"/><rect x="42" y="168" width="42" height="42" fill="#ca4fd1" opacity=".55"/>
+  </g>
+  <path d="M925 305 H975" class="arrow"/><path d="M975 305 l-14 -10 M975 305 l-14 10" class="arrow"/>
+  <rect x="990" y="205" width="120" height="55" fill="#daf2de" class="box"/><text x="1022" y="239" font="15px Arial">Pooling</text>
+  <rect x="990" y="300" width="120" height="55" fill="#ece4fa" class="box"/><text x="1018" y="334" font="15px Arial">Classifier</text>
+  <rect x="990" y="395" width="120" height="55" fill="#ffedcc" class="box"/><text x="1000" y="429" font="15px Arial">Document type</text>
+  <text x="284" y="627" class="label">Filters detect edges, table borders, shapes, or layout regions.</text>
+</svg>

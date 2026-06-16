@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">K-means Elbow Curve</title>
+  <desc id="desc">Synthetic elbow curve for choosing the number of clusters.</desc>
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#111}.label{font:15px Arial,sans-serif;fill:#555}.small{font:13px Arial,sans-serif;fill:#555}
+    .axis{stroke:#444;stroke-width:2}.grid{stroke:#e5e7eb;stroke-width:1}
+  </style>
+  <rect width="1200" height="720" fill="#fff"/>
+  <text x="40" y="62" class="title">Choosing K: Elbow Curve for Synthetic Customer Segments</text>
+  <g transform="translate(120 130)">
+    <line x1="0" y1="96" x2="900" y2="96" class="grid"/><line x1="0" y1="192" x2="900" y2="192" class="grid"/>
+    <line x1="0" y1="288" x2="900" y2="288" class="grid"/><line x1="0" y1="384" x2="900" y2="384" class="grid"/>
+    <line x1="0" y1="480" x2="900" y2="480" class="axis"/><line x1="0" y1="0" x2="0" y2="480" class="axis"/>
+    <text x="360" y="522" class="label">Number of clusters K</text><text x="0" y="-16" class="label">Within-cluster variation</text>
+    <polyline points="0,30 128,245 257,365 386,395 514,415 643,426 771,435 900,440" fill="none" stroke="#4f87b8" stroke-width="4"/>
+    <g fill="#4f87b8">
+      <circle cx="0" cy="30" r="7"/><circle cx="128" cy="245" r="7"/><circle cx="257" cy="365" r="7"/><circle cx="386" cy="395" r="7"/>
+      <circle cx="514" cy="415" r="7"/><circle cx="643" cy="426" r="7"/><circle cx="771" cy="435" r="7"/><circle cx="900" cy="440" r="7"/>
+    </g>
+    <line x1="257" y1="0" x2="257" y2="480" stroke="#cd5c5c" stroke-width="3" stroke-dasharray="10 8"/>
+    <text x="282" y="330" class="label" fill="#cd5c5c">possible elbow at K = 3</text>
+    <text x="-5" y="505" class="small">1</text><text x="123" y="505" class="small">2</text><text x="252" y="505" class="small">3</text>
+    <text x="381" y="505" class="small">4</text><text x="509" y="505" class="small">5</text><text x="638" y="505" class="small">6</text>
+    <text x="766" y="505" class="small">7</text><text x="895" y="505" class="small">8</text>
+  </g>
+  <text x="405" y="680" class="small">After the elbow, extra clusters add less improvement.</text>
+</svg>

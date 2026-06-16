@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">K-means Customer Segmentation</title>
+  <desc id="desc">Synthetic K-means customer segmentation diagram with three clusters and centroids.</desc>
+  <style>
+    .title { font: 700 28px Arial, sans-serif; fill: #111; }
+    .subtitle { font: 700 18px Arial, sans-serif; fill: #111; }
+    .label { font: 15px Arial, sans-serif; fill: #555; }
+    .small { font: 13px Arial, sans-serif; fill: #555; }
+    .axis { stroke: #444; stroke-width: 2; }
+    .grid { stroke: #e5e7eb; stroke-width: 1; }
+    .blue { fill: #4f87b8; opacity: 0.9; }
+    .orange { fill: #df8339; opacity: 0.9; }
+    .green { fill: #4f9d63; opacity: 0.9; }
+  </style>
+
+  <rect width="1200" height="720" fill="#fff"/>
+  <text x="40" y="62" class="title">K-means Customer Segmentation: Synthetic FinTech Example</text>
+  <text x="105" y="118" class="subtitle">Monthly spend vs savings balance</text>
+
+  <g transform="translate(110 135)">
+    <line x1="0" y1="96" x2="920" y2="96" class="grid"/>
+    <line x1="0" y1="192" x2="920" y2="192" class="grid"/>
+    <line x1="0" y1="288" x2="920" y2="288" class="grid"/>
+    <line x1="0" y1="384" x2="920" y2="384" class="grid"/>
+    <line x1="184" y1="0" x2="184" y2="480" class="grid"/>
+    <line x1="368" y1="0" x2="368" y2="480" class="grid"/>
+    <line x1="552" y1="0" x2="552" y2="480" class="grid"/>
+    <line x1="736" y1="0" x2="736" y2="480" class="grid"/>
+    <line x1="0" y1="480" x2="920" y2="480" class="axis"/>
+    <line x1="0" y1="0" x2="0" y2="480" class="axis"/>
+    <text x="398" y="522" class="label">Monthly spend</text>
+    <text x="0" y="-16" class="label">Savings balance</text>
+
+    <!-- Segment A: savers -->
+    <circle cx="145" cy="128" r="6" class="blue"/><circle cx="178" cy="104" r="6" class="blue"/>
+    <circle cx="205" cy="142" r="6" class="blue"/><circle cx="126" cy="170" r="6" class="blue"/>
+    <circle cx="230" cy="166" r="6" class="blue"/><circle cx="184" cy="190" r="6" class="blue"/>
+    <circle cx="112" cy="122" r="6" class="blue"/><circle cx="245" cy="108" r="6" class="blue"/>
+    <circle cx="162" cy="212" r="6" class="blue"/><circle cx="218" cy="216" r="6" class="blue"/>
+    <circle cx="202" cy="82" r="6" class="blue"/><circle cx="130" cy="204" r="6" class="blue"/>
+
+    <!-- Segment B: active spenders -->
+    <circle cx="550" cy="335" r="6" class="orange"/><circle cx="600" cy="312" r="6" class="orange"/>
+    <circle cx="642" cy="350" r="6" class="orange"/><circle cx="505" cy="365" r="6" class="orange"/>
+    <circle cx="612" cy="392" r="6" class="orange"/><circle cx="680" cy="318" r="6" class="orange"/>
+    <circle cx="535" cy="290" r="6" class="orange"/><circle cx="588" cy="360" r="6" class="orange"/>
+    <circle cx="660" cy="386" r="6" class="orange"/><circle cx="705" cy="350" r="6" class="orange"/>
+    <circle cx="560" cy="405" r="6" class="orange"/><circle cx="630" cy="285" r="6" class="orange"/>
+
+    <!-- Segment C: high value digital users -->
+    <circle cx="710" cy="112" r="6" class="green"/><circle cx="760" cy="88" r="6" class="green"/>
+    <circle cx="820" cy="120" r="6" class="green"/><circle cx="782" cy="166" r="6" class="green"/>
+    <circle cx="850" cy="78" r="6" class="green"/><circle cx="890" cy="140" r="6" class="green"/>
+    <circle cx="740" cy="188" r="6" class="green"/><circle cx="835" cy="178" r="6" class="green"/>
+    <circle cx="795" cy="52" r="6" class="green"/><circle cx="875" cy="102" r="6" class="green"/>
+    <circle cx="715" cy="150" r="6" class="green"/><circle cx="825" cy="215" r="6" class="green"/>
+
+    <!-- Centroids -->
+    <g stroke="#111" stroke-width="3">
+      <line x1="171" y1="139" x2="195" y2="139"/><line x1="183" y1="127" x2="183" y2="151"/>
+      <line x1="594" y1="342" x2="618" y2="342"/><line x1="606" y1="330" x2="606" y2="354"/>
+      <line x1="788" y1="130" x2="812" y2="130"/><line x1="800" y1="118" x2="800" y2="142"/>
+    </g>
+  </g>
+
+  <rect x="112" y="635" width="16" height="16" fill="#4f87b8"/>
+  <text x="137" y="648" class="small">Segment A: savers</text>
+  <rect x="305" y="635" width="16" height="16" fill="#df8339"/>
+  <text x="330" y="648" class="small">Segment B: active spenders</text>
+  <rect x="575" y="635" width="16" height="16" fill="#4f9d63"/>
+  <text x="600" y="648" class="small">Segment C: high value digital users</text>
+  <text x="885" y="648" class="small">Cross marks show centroids.</text>
+</svg>

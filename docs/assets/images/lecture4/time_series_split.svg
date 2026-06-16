@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Time Series Validation</title>
+  <desc id="desc">Comparison of random split, chronological split, and rolling split for time series validation.</desc>
+  <style>.title{font:700 28px Arial,sans-serif;fill:#111}.head{font:700 21px Arial,sans-serif}.label{font:14px Arial,sans-serif;fill:#555}.bar{stroke:#555;stroke-width:1}</style>
+  <rect width="1200" height="720" fill="#fff"/><text x="40" y="62" class="title">Time Series Validation: Random Split vs Chronological Split</text>
+  <text x="85" y="126" class="head" fill="#cd5c5c">Wrong: random split mixes past and future</text>
+  <g transform="translate(210 155)">
+    <rect x="0" y="0" width="39" height="38" fill="#cd5c5c" class="bar"/><rect x="39" y="0" width="39" height="38" fill="#cd5c5c" class="bar"/><rect x="78" y="0" width="39" height="38" fill="#4f87b8" class="bar"/><rect x="117" y="0" width="39" height="38" fill="#4f87b8" class="bar"/><rect x="156" y="0" width="39" height="38" fill="#4f87b8" class="bar"/><rect x="195" y="0" width="39" height="38" fill="#cd5c5c" class="bar"/><rect x="234" y="0" width="39" height="38" fill="#4f87b8" class="bar"/><rect x="273" y="0" width="39" height="38" fill="#cd5c5c" class="bar"/><rect x="312" y="0" width="39" height="38" fill="#4f87b8" class="bar"/><rect x="351" y="0" width="39" height="38" fill="#cd5c5c" class="bar"/><rect x="390" y="0" width="39" height="38" fill="#4f87b8" class="bar"/><rect x="429" y="0" width="39" height="38" fill="#4f87b8" class="bar"/><rect x="468" y="0" width="39" height="38" fill="#4f87b8" class="bar"/><rect x="507" y="0" width="39" height="38" fill="#cd5c5c" class="bar"/><rect x="546" y="0" width="39" height="38" fill="#cd5c5c" class="bar"/><rect x="585" y="0" width="39" height="38" fill="#4f87b8" class="bar"/><rect x="624" y="0" width="39" height="38" fill="#4f87b8" class="bar"/><rect x="663" y="0" width="39" height="38" fill="#cd5c5c" class="bar"/><rect x="702" y="0" width="39" height="38" fill="#4f87b8" class="bar"/><rect x="741" y="0" width="39" height="38" fill="#4f87b8" class="bar"/><rect x="780" y="0" width="39" height="38" fill="#4f87b8" class="bar"/><rect x="819" y="0" width="39" height="38" fill="#cd5c5c" class="bar"/>
+  </g>
+  <text x="205" y="216" class="label">2019</text><text x="1042" y="216" class="label">2024</text>
+  <text x="85" y="302" class="head" fill="#4f9d63">Correct: train on earlier periods, test on later periods</text>
+  <rect x="210" y="330" width="650" height="38" fill="#4f87b8" class="bar"/><rect x="860" y="330" width="200" height="38" fill="#cd5c5c" class="bar"/>
+  <text x="506" y="354" font="16px Arial" fill="#fff">train</text><text x="934" y="354" font="16px Arial" fill="#fff">test</text>
+  <text x="85" y="476" class="head" fill="#4f87b8">Rolling split: repeated forward-looking evaluation</text>
+  <rect x="210" y="505" width="380" height="28" fill="#4f87b8" class="bar"/><rect x="590" y="505" width="115" height="28" fill="#4f9d63" class="bar"/>
+  <rect x="210" y="547" width="500" height="28" fill="#4f87b8" class="bar"/><rect x="710" y="547" width="115" height="28" fill="#4f9d63" class="bar"/>
+  <rect x="210" y="589" width="620" height="28" fill="#4f87b8" class="bar"/><rect x="830" y="589" width="115" height="28" fill="#4f9d63" class="bar"/>
+  <rect x="875" y="650" width="25" height="14" fill="#4f87b8"/><text x="908" y="662" class="label">Train</text>
+  <rect x="955" y="650" width="25" height="14" fill="#cd5c5c"/><text x="988" y="662" class="label">Test</text>
+  <rect x="1025" y="650" width="25" height="14" fill="#4f9d63"/><text x="1058" y="662" class="label">Validation</text>
+</svg>

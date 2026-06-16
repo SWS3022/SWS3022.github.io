@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Dropout Demo</title>
+  <desc id="desc">Normal neural network compared with dropout during training.</desc>
+  <style>.title{font:700 28px Arial,sans-serif;fill:#111}.head{font:700 21px Arial,sans-serif;fill:#111}.small{font:15px Arial,sans-serif;fill:#555}</style>
+  <rect width="1200" height="720" fill="#fff"/><text x="40" y="62" class="title">Dropout: Temporarily Disabling Neurons During Training</text>
+  <text x="155" y="132" class="head">Normal network</text><text x="715" y="132" class="head">Training with dropout</text>
+  <g stroke="#c9ced6" stroke-width="1.2">
+    <path d="M115 270 L265 235 M115 270 L265 305 M115 270 L265 375 M115 270 L265 445 M115 350 L265 235 M115 350 L265 305 M115 350 L265 375 M115 350 L265 445 M115 430 L265 235 M115 430 L265 305 M115 430 L265 375 M115 430 L265 445"/>
+    <path d="M265 235 L415 290 M265 235 L415 370 M265 235 L415 450 M265 305 L415 290 M265 305 L415 370 M265 305 L415 450 M265 375 L415 290 M265 375 L415 370 M265 375 L415 450 M265 445 L415 290 M265 445 L415 370 M265 445 L415 450"/>
+    <path d="M415 290 L565 370 M415 370 L565 370 M415 450 L565 370"/>
+    <path d="M665 270 L815 235 M665 270 L815 375 M665 350 L815 235 M665 350 L815 375 M665 430 L815 235 M665 430 L815 375"/>
+    <path d="M815 235 L965 350 M815 375 L965 350 M965 350 L1115 370"/>
+  </g>
+  <g stroke="#555" stroke-width="1" fill="#dceeff">
+    <circle cx="115" cy="270" r="22"/><circle cx="115" cy="350" r="22"/><circle cx="115" cy="430" r="22"/><circle cx="265" cy="235" r="22"/><circle cx="265" cy="305" r="22"/><circle cx="265" cy="375" r="22"/><circle cx="265" cy="445" r="22"/><circle cx="415" cy="290" r="22"/><circle cx="415" cy="370" r="22"/><circle cx="415" cy="450" r="22"/><circle cx="565" cy="370" r="22"/>
+    <circle cx="665" cy="270" r="22"/><circle cx="665" cy="350" r="22"/><circle cx="665" cy="430" r="22"/><circle cx="815" cy="235" r="22"/><circle cx="815" cy="375" r="22"/><circle cx="965" cy="350" r="22"/><circle cx="1115" cy="370" r="22"/>
+  </g>
+  <g stroke="#cd5c5c" stroke-width="3">
+    <circle cx="815" cy="305" r="22" fill="#eee" stroke="#555" stroke-width="1"/><line x1="801" y1="291" x2="829" y2="319"/><line x1="829" y1="291" x2="801" y2="319"/>
+    <circle cx="815" cy="445" r="22" fill="#eee" stroke="#555" stroke-width="1"/><line x1="801" y1="431" x2="829" y2="459"/><line x1="829" y1="431" x2="801" y2="459"/>
+    <circle cx="965" cy="270" r="22" fill="#eee" stroke="#555" stroke-width="1"/><line x1="951" y1="256" x2="979" y2="284"/><line x1="979" y1="256" x2="951" y2="284"/>
+  </g>
+  <text x="182" y="590" class="small">All neurons may be active.</text><text x="692" y="590" class="small">Some neurons are disabled only during training.</text>
+</svg>

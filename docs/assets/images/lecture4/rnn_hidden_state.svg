@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">RNN Hidden State</title>
+  <desc id="desc">RNN cells carrying hidden state through a sequence.</desc>
+  <style>.title{font:700 28px Arial,sans-serif;fill:#111}.label{font:16px Arial,sans-serif;fill:#111}.small{font:15px Arial,sans-serif;fill:#555}.arrow{stroke:#444;stroke-width:3;fill:none}.box{stroke:#555;stroke-width:1}</style>
+  <rect width="1200" height="720" fill="#fff"/><text x="40" y="62" class="title">RNN: Hidden State Carries Sequence Information Through Time</text>
+  <g>
+    <rect x="110" y="185" width="100" height="50" fill="#dceeff" class="box"/><text x="151" y="216" class="label">x1</text>
+    <rect x="88" y="310" width="145" height="80" fill="#ece4fa" class="box"/><text x="128" y="356" class="label">RNN cell</text>
+    <rect x="110" y="435" width="100" height="50" fill="#ffedcc" class="box"/><text x="151" y="466" class="label">h1</text>
+    <rect x="345" y="185" width="100" height="50" fill="#dceeff" class="box"/><text x="386" y="216" class="label">x2</text>
+    <rect x="323" y="310" width="145" height="80" fill="#ece4fa" class="box"/><text x="363" y="356" class="label">RNN cell</text>
+    <rect x="345" y="435" width="100" height="50" fill="#ffedcc" class="box"/><text x="386" y="466" class="label">h2</text>
+    <rect x="580" y="185" width="100" height="50" fill="#dceeff" class="box"/><text x="621" y="216" class="label">x3</text>
+    <rect x="558" y="310" width="145" height="80" fill="#ece4fa" class="box"/><text x="598" y="356" class="label">RNN cell</text>
+    <rect x="580" y="435" width="100" height="50" fill="#ffedcc" class="box"/><text x="621" y="466" class="label">h3</text>
+    <rect x="815" y="185" width="100" height="50" fill="#dceeff" class="box"/><text x="856" y="216" class="label">x4</text>
+    <rect x="793" y="310" width="145" height="80" fill="#ece4fa" class="box"/><text x="833" y="356" class="label">RNN cell</text>
+    <rect x="815" y="435" width="100" height="50" fill="#ffedcc" class="box"/><text x="856" y="466" class="label">h4</text>
+  </g>
+  <g class="arrow">
+    <path d="M160 235 V300"/><path d="M160 300 l-10 -14 M160 300 l10 -14"/><path d="M160 390 V435"/><path d="M160 435 l-10 -14 M160 435 l10 -14"/>
+    <path d="M395 235 V300"/><path d="M395 300 l-10 -14 M395 300 l10 -14"/><path d="M395 390 V435"/><path d="M395 435 l-10 -14 M395 435 l10 -14"/>
+    <path d="M630 235 V300"/><path d="M630 300 l-10 -14 M630 300 l10 -14"/><path d="M630 390 V435"/><path d="M630 435 l-10 -14 M630 435 l10 -14"/>
+    <path d="M865 235 V300"/><path d="M865 300 l-10 -14 M865 300 l10 -14"/><path d="M865 390 V435"/><path d="M865 435 l-10 -14 M865 435 l10 -14"/>
+    <path d="M233 350 H323"/><path d="M323 350 l-14 -10 M323 350 l-14 10"/><path d="M468 350 H558"/><path d="M558 350 l-14 -10 M558 350 l-14 10"/><path d="M703 350 H793"/><path d="M793 350 l-14 -10 M793 350 l-14 10"/>
+  </g>
+  <text x="254" y="582" font="700 21px Arial">current input + previous hidden state -&gt; updated hidden state</text>
+  <text x="253" y="617" class="small">Examples: transaction sequence, daily returns, words in financial news, app actions.</text>
+</svg>

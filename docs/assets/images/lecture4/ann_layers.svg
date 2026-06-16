@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Artificial Neural Network Layers</title>
+  <desc id="desc">Neural network layers transforming input features into a risk prediction.</desc>
+  <style>
+    .title{font:700 28px Arial,sans-serif;fill:#111}.head{font:700 20px Arial,sans-serif;fill:#111}.label{font:14px Arial,sans-serif;fill:#333}.small{font:15px Arial,sans-serif;fill:#555}
+  </style>
+  <rect width="1200" height="720" fill="#fff"/>
+  <text x="40" y="62" class="title">Artificial Neural Network: Layers Transform Inputs into Predictions</text>
+  <g stroke="#c9ced6" stroke-width="1.2">
+    <line x1="180" y1="210" x2="420" y2="190"/><line x1="180" y1="210" x2="420" y2="280"/><line x1="180" y1="210" x2="420" y2="370"/><line x1="180" y1="210" x2="420" y2="460"/><line x1="180" y1="210" x2="420" y2="550"/>
+    <line x1="180" y1="310" x2="420" y2="190"/><line x1="180" y1="310" x2="420" y2="280"/><line x1="180" y1="310" x2="420" y2="370"/><line x1="180" y1="310" x2="420" y2="460"/><line x1="180" y1="310" x2="420" y2="550"/>
+    <line x1="180" y1="410" x2="420" y2="190"/><line x1="180" y1="410" x2="420" y2="280"/><line x1="180" y1="410" x2="420" y2="370"/><line x1="180" y1="410" x2="420" y2="460"/><line x1="180" y1="410" x2="420" y2="550"/>
+    <line x1="180" y1="510" x2="420" y2="190"/><line x1="180" y1="510" x2="420" y2="280"/><line x1="180" y1="510" x2="420" y2="370"/><line x1="180" y1="510" x2="420" y2="460"/><line x1="180" y1="510" x2="420" y2="550"/>
+    <line x1="420" y1="190" x2="690" y2="230"/><line x1="420" y1="190" x2="690" y2="340"/><line x1="420" y1="190" x2="690" y2="450"/>
+    <line x1="420" y1="280" x2="690" y2="230"/><line x1="420" y1="280" x2="690" y2="340"/><line x1="420" y1="280" x2="690" y2="450"/>
+    <line x1="420" y1="370" x2="690" y2="230"/><line x1="420" y1="370" x2="690" y2="340"/><line x1="420" y1="370" x2="690" y2="450"/>
+    <line x1="420" y1="460" x2="690" y2="230"/><line x1="420" y1="460" x2="690" y2="340"/><line x1="420" y1="460" x2="690" y2="450"/>
+    <line x1="420" y1="550" x2="690" y2="230"/><line x1="420" y1="550" x2="690" y2="340"/><line x1="420" y1="550" x2="690" y2="450"/>
+    <line x1="690" y1="230" x2="960" y2="340"/><line x1="690" y1="340" x2="960" y2="340"/><line x1="690" y1="450" x2="960" y2="340"/>
+  </g>
+  <text x="82" y="145" class="head">Input features</text><text x="340" y="145" class="head">Hidden layer 1</text><text x="620" y="145" class="head">Hidden layer 2</text><text x="870" y="145" class="head">Output prediction</text>
+  <g stroke="#555" stroke-width="1">
+    <g fill="#dceeff"><circle cx="150" cy="210" r="31"/><circle cx="150" cy="310" r="31"/><circle cx="150" cy="410" r="31"/><circle cx="150" cy="510" r="31"/></g>
+    <g fill="#daf2de"><circle cx="420" cy="190" r="31"/><circle cx="420" cy="280" r="31"/><circle cx="420" cy="370" r="31"/><circle cx="420" cy="460" r="31"/><circle cx="420" cy="550" r="31"/></g>
+    <g fill="#ece4fa"><circle cx="690" cy="230" r="31"/><circle cx="690" cy="340" r="31"/><circle cx="690" cy="450" r="31"/></g>
+    <circle cx="960" cy="340" r="31" fill="#ffedcc"/>
+  </g>
+  <text x="122" y="215" class="label">income</text><text x="126" y="315" class="label">loan</text><text x="124" y="415" class="label">history</text><text x="130" y="515" class="label">ratio</text><text x="948" y="345" class="label">risk</text>
+  <text x="310" y="640" class="small">Hidden layers learn internal representations useful for the task.</text>
+</svg>
