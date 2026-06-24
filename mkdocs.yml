@@ -29,6 +29,7 @@ nav:
   - Online Tutorial:
       - "Lecture 1 Supplement: From Python Tools to FinTech Projects": web-app/lecture-1-supplement.md
       - "Lecture 4: AI/ML/DL Introduction": web-app/lecture-4-aiml-dl-introduction.md
+      - "Lecture 6: JavaScript Fundamentals": web-app/lecture-6-javascript-fundamentals.md
       - "Fintech Web App: React + Flask + DB":
           - Tutorial Overview: web-app/index.md
           - What You Will Build: overview/what-you-will-build.md
@@ -51,6 +52,7 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.snippets
+  - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid

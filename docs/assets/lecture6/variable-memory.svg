@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+  <title id="title">Variable memory boxes</title>
+  <desc id="desc">A diagram showing variables a, b, and c pointing to values 10, 30, and 40.</desc>
+  <rect width="960" height="360" fill="#f8fafc"/>
+  <text x="480" y="46" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#1f2937">Variables Give Names to Values</text>
+  <g font-family="Arial, sans-serif" font-size="22" font-weight="700">
+    <rect x="160" y="98" width="120" height="64" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+    <text x="220" y="139" text-anchor="middle" fill="#1d4ed8">a</text>
+    <path d="M290 130 H410" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="425" y="98" width="140" height="64" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="3"/>
+    <text x="495" y="139" text-anchor="middle" fill="#1f2937">10</text>
+
+    <rect x="160" y="178" width="120" height="64" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+    <text x="220" y="219" text-anchor="middle" fill="#15803d">b</text>
+    <path d="M290 210 H410" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="425" y="178" width="140" height="64" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="3"/>
+    <text x="495" y="219" text-anchor="middle" fill="#1f2937">30</text>
+
+    <rect x="160" y="258" width="120" height="64" rx="10" fill="#ffedd5" stroke="#f97316" stroke-width="3"/>
+    <text x="220" y="299" text-anchor="middle" fill="#c2410c">c</text>
+    <path d="M290 290 H410" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="425" y="258" width="140" height="64" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="3"/>
+    <text x="495" y="299" text-anchor="middle" fill="#1f2937">40</text>
+  </g>
+  <text x="700" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#334155">let c = a + b;</text>
+  <text x="700" y="217" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#475569">c stores the result</text>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>
